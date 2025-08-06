@@ -1,0 +1,105 @@
+{
+    "DESIGN_NAME": "openframe_ekorv32_wrapper",
+    "VERILOG_DEFINES": "PnR",
+    "VERILOG_FILES": [
+        "dir::/../../verilog/rtl/openframe_project_netlists.v",
+        "dir::/../../verilog/rtl/openframe_ekorv32_wrapper.v"
+    ],
+    "VERILOG_FILES_BLACKBOX": [
+        "dir::../../verilog/gl/ekorv32.v",
+        "pdk_dir::libs.ref/sky130_sram_macros/verilog/sky130_sram_2kbyte_1rw1r_32x512_8.v",
+        "dir::../../verilog/gl/vccd1_connection.v",
+        "dir::../../verilog/gl/vssd1_connection.v"
+    ],
+    "EXTRA_LEFS": [
+        "dir::../../lef/ekorv32.lef",
+        "pdk_dir::libs.ref/sky130_sram_macros/lef/sky130_sram_2kbyte_1rw1r_32x512_8.lef",
+        "dir::../../lef/vccd1_connection.lef",
+        "dir::../../lef/vssd1_connection.lef"
+    ],
+    "EXTRA_GDS_FILES": [
+        "dir::../../gds/ekorv32.gds",
+        "pdk_dir::libs.ref/sky130_sram_macros/gds/sky130_sram_2kbyte_1rw1r_32x512_8.gds",
+        "dir::../../gds/vccd1_connection.gds",
+        "dir::../../gds/vssd1_connection.gds"
+    ],
+    "EXTRA_LIBS": [
+        "dir::../../lib/ekorv32.lib",
+        "pdk_dir::libs.ref/sky130_sram_macros/lib/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib"
+		],
+    "EXTRA_SPEFS": [
+        "ekorv32",
+        "dir::../../spef/multicorner/ekorv32.min.spef",
+        "dir::../../spef/multicorner/ekorv32.nom.spef",
+        "dir::../../spef/multicorner/ekorv32.max.spef"
+    ],
+    "MAX_TRANSITION_CONSTRAINT": 0.5,
+    "QUIT_ON_SYNTH_CHECKS": 0,
+    "FP_PDN_CHECK_NODES": 0,
+    "SYNTH_ELABORATE_ONLY": 1,
+    "PL_RANDOM_GLB_PLACEMENT": 1,
+    "SYNTH_USE_PG_PINS_DEFINES": "USE_POWER_PINS",
+    "PL_RESIZER_DESIGN_OPTIMIZATIONS": 0,
+    "PL_RESIZER_TIMING_OPTIMIZATIONS": 0,
+    "GLB_RESIZER_TIMING_OPTIMIZATIONS": 0,
+    "GLB_RESIZER_DESIGN_OPTIMIZATIONS": 0,
+    "PL_RESIZER_BUFFER_INPUT_PORTS": 0,
+    "RUN_CTS": 0,
+    "FP_PDN_ENABLE_RAILS": 0,
+    "GRT_REPAIR_ANTENNAS": 0,
+    "RUN_HEURISTIC_DIODE_INSERTION": 0,
+    "RUN_FILL_INSERTION": 0,
+    "RUN_TAP_DECAP_INSERTION": 0,
+    "FP_PDN_VPITCH": 40,
+    "FP_PDN_HPITCH": 40,
+    "FP_PDN_VOFFSET": 18.43,
+    "FP_PDN_HOFFSET": 22.83,
+    "MAGIC_ZEROIZE_ORIGIN": 0,
+    "FP_SIZING": "absolute",
+    "RUN_CVC": 0,
+    "FP_PDN_CORE_RING": 1,
+    "FP_PDN_CORE_RING_VWIDTH": 20,
+    "FP_PDN_CORE_RING_HWIDTH": 20,
+    "FP_PDN_CORE_RING_VOFFSET": -4,
+    "FP_PDN_CORE_RING_HOFFSET": -4,
+    "FP_PDN_CORE_RING_VSPACING": 2.4,
+    "FP_PDN_CORE_RING_HSPACING": 2.4,
+    "FP_PDN_VWIDTH": 6.4,
+    "FP_PDN_HWIDTH": 6.4,
+    "FP_PDN_HSPACING": 3.2,
+    "FP_PDN_VSPACING": 3.2,
+    "MAGIC_DRC_USE_GDS": false,
+    "QUIT_ON_MAGIC_DRC": false,
+    "VDD_NETS": [
+        "vccd1"
+    ],
+    "GND_NETS": [
+        "vssd1"
+    ],
+    "FP_TEMPLATE_PINS": [
+        "vccd1",
+        "vssd1",
+        "vccd",
+        "vssd",
+        "vccd2",
+        "vssd2",
+        "vssa",
+        "vdda",
+        "vssa1",
+        "vdda1",
+        "vssa2",
+        "vdda2",
+        "vddio",
+        "vssio"
+    ],
+    "DIE_AREA": "0 0 3166.63 4766.630",
+    "CORE_AREA": "40 40 3126.63 4726.630",
+    "RUN_IRDROP_REPORT": 0,
+    "FP_PDN_MACRO_HOOKS": " EkoRV32 vccd1 vssd1 vccd1 vssd1, Memory vccd1 vssd1 vccd1 vssd1",
+    "FP_PDN_CFG": "dir::pdn_cfg.tcl",
+    "FP_DEF_TEMPLATE": "dir::fixed_dont_change/openframe_project_wrapper.def",
+    "MACRO_PLACEMENT_CFG": "dir::macro.cfg",
+    "RUN_LINTER": 0,
+    "RUN_LVS": 0,
+    "MAGIC_DEF_LABELS": 0
+}
