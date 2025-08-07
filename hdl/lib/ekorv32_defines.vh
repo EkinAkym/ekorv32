@@ -10,9 +10,11 @@
 //============================== DEFINES ===============================//
 //----------------------------------------------------------------------//
 
-`define MEM_DEPTH   (4096)
-`define RVLEN       (32)
-`define RVLEN2      (64)
+`define MEM_DEPTH         (4096)
+`define RVLEN             (32)
+`define RVLEN2            (64)
+`define CLOCK_FREQUENCY   (100_000_000)
+`define UART_BAUDRATE     (115_200)
 
 //----------------------------------------------------------------------//
 `define A0              (0)
@@ -76,6 +78,7 @@
 `define BYTE2       (16)
 `define BYTE2M1     (15)
 `define BYTE1M1     (7)
+`define BYTE0       (0)
 `define RVLEN2M1    (`RVLEN2-1)
 `define RVLENM1     (`RVLEN-1)
 
