@@ -2,8 +2,8 @@
 //  Module Name  : ekorv32_perip_uart.v
 //  Project      : EkoRV-32 
 //  Author       : Ekin Akyildirim
-//  Change Log   : Date | Designer Name | Version
-//  Description  : Description   TODO!
+//  Change Log   : 15.08.2025 | E.Akyilidirim | v0.1
+//  Description  : EkoRV-32 Peripheral UART unit.
 //####################################################################################################################################//
 
 //----------------------------------------------------------------------//
